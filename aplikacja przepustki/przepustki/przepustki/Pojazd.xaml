@@ -1,0 +1,31 @@
+﻿<Window x:Class="przepustki.Pojazd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:przepustki"
+        mc:Ignorable="d"
+        Title="Pojazd" Height="450" Width="800">
+    <Grid>
+        <Label Content="Przepustka pojazd" HorizontalAlignment="Center" Margin="180,10,146.6,0" VerticalAlignment="Top" RenderTransformOrigin="-1.387,-1.191" Height="70" Width="467" FontSize="50"/>
+        <Button Content="Powrot" FontSize="50px" HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top" Width="185" Click="Button_Powrot" Height="85"/>
+        <Button Content="Wystaw" FontSize="50px" HorizontalAlignment="Left" Margin="599,328,0,0" VerticalAlignment="Top" Width="185" Height="85" Click="Button_Wystaw"/>
+        <Label Content="Numer rejestracyjny" HorizontalAlignment="Left" Margin="18,80,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbNrRej" HorizontalAlignment="Left" Height="26" Margin="154,85,0,0" TextWrapping="Wrap" Text="Wpisz Numer rejestracyjny" VerticalAlignment="Top" Width="152" GotFocus="tbNrRej_GotFocus"/>
+        <Label Content="Masa na wjezdzie" HorizontalAlignment="Left" Margin="18,111,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbMasa" HorizontalAlignment="Left" Height="26" Margin="154,115,0,0" TextWrapping="Wrap" Text="Wpisz mase na wjezdzie" VerticalAlignment="Top" Width="152" GotFocus="tbMasa_GotFocus"/>
+        <Label Content="Marka" HorizontalAlignment="Left" Margin="18,142,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbMarka" HorizontalAlignment="Left" Height="26" Margin="154,146,0,0" TextWrapping="Wrap" Text="Podaj marke pojazdu" VerticalAlignment="Top" Width="152" GotFocus="tbMarka_GotFocus"/>
+        <Label Content="Typ" HorizontalAlignment="Left" Margin="18,173,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbTyp" HorizontalAlignment="Left" Margin="154,177,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ilosc osob na pokladzie" HorizontalAlignment="Left" Margin="18,204,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbOsoby" HorizontalAlignment="Left" Height="26" Margin="154,204,0,0" TextWrapping="Wrap" Text="Podaj ilosc osob na pokladzie" VerticalAlignment="Top" Width="168" GotFocus="tbOsoby_GotFocus" />
+        <Label Content="Firma" HorizontalAlignment="Left" Margin="18,235,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbFirma" HorizontalAlignment="Left" Height="26" Margin="154,235,0,0" TextWrapping="Wrap" Text="Firma przyjezdna" VerticalAlignment="Top" Width="168" GotFocus="tbFirma_GotFocus" />
+        <Label Content="Dowod wjazdu" HorizontalAlignment="Left" Margin="18,266,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbDowod" HorizontalAlignment="Left" Height="26" Margin="154,266,0,0" TextWrapping="Wrap" Text="Dowod wjazdu" VerticalAlignment="Top" Width="168" GotFocus="tbDowod_GotFocus" />
+        <Button x:Name="btnSzukaj"  Content="Szukaj" HorizontalAlignment="Left" Margin="322,85,0,0" VerticalAlignment="Top" Width="75" Click="Button_Szukaj"/>
+
+
+    </Grid>
+</Window>
